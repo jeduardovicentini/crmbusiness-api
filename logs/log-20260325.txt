@@ -1,0 +1,64 @@
+2026-03-25 15:33:01.122 -03:00 [INF] User profile is available. Using 'C:\Users\EDUARDO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-25 15:33:02.432 -03:00 [INF] Now listening on: https://localhost:7032
+2026-03-25 15:33:02.444 -03:00 [INF] Now listening on: http://localhost:5177
+2026-03-25 15:33:02.621 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-25 15:33:02.627 -03:00 [INF] Hosting environment: Development
+2026-03-25 15:33:02.632 -03:00 [INF] Content root path: D:\Projetos\CRMBusiness
+2026-03-25 15:33:03.785 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/ - null null
+2026-03-25 15:33:04.506 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-25 15:33:04.651 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CRMBusiness.Controllers.HomeController (CRMBusiness).
+2026-03-25 15:33:04.709 -03:00 [INF] Executing ViewResult, running view Index.
+2026-03-25 15:33:04.998 -03:00 [INF] Executed ViewResult - view Index executed in 296.9713ms.
+2026-03-25 15:33:05.068 -03:00 [INF] Executed action CRMBusiness.Controllers.HomeController.Index (CRMBusiness) in 403.7722ms
+2026-03-25 15:33:05.076 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/css/site.css - null null
+2026-03-25 15:33:05.081 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - null null
+2026-03-25 15:33:05.081 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - null null
+2026-03-25 15:33:05.077 -03:00 [INF] Executed endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-25 15:33:05.157 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-25 15:33:05.150 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-25 15:33:05.082 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 15:33:05.242 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/ - 200 null text/html; charset=utf-8 1461.2958ms
+2026-03-25 15:33:05.252 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 170.0102ms
+2026-03-25 15:33:05.322 -03:00 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\Projetos\CRMBusiness\obj\Debug\net9.0\compressed\rretn5puo2-{0}-oiums2c10j-oiums2c10j.gz'
+2026-03-25 15:33:05.322 -03:00 [INF] Sending file. Request path: 'img/Logo-TecnoBusiness.png'. Physical path: 'D:\Projetos\CRMBusiness\wwwroot\img\Logo-TecnoBusiness.png'
+2026-03-25 15:33:05.324 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 null text/javascript; charset=UTF-8 242.7941ms
+2026-03-25 15:33:05.329 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-25 15:33:05.332 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-25 15:33:05.342 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/css/site.css - 200 8647 text/css 266.9956ms
+2026-03-25 15:33:05.345 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - 200 48729 image/png 264.0853ms
+2026-03-25 15:36:25.758 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/bigquery/formsdatasync?projeto=deboraribeirotricot - null null
+2026-03-25 15:36:25.877 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.BigQueryController.FormsDataSync (CRMBusiness)'
+2026-03-25 15:36:25.926 -03:00 [INF] Route matched with {action = "FormsDataSync", controller = "BigQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FormsDataSync(System.String) on controller CRMBusiness.Controllers.BigQueryController (CRMBusiness).
+2026-03-25 15:36:26.285 -03:00 [INF] Registrando BigQueryClient com ProjectId: dutiprojects
+2026-03-25 15:37:38.951 -03:00 [INF] Executing OkObjectResult, writing value of type 'ProcessingResult'.
+2026-03-25 15:37:38.982 -03:00 [INF] Executed action CRMBusiness.Controllers.BigQueryController.FormsDataSync (CRMBusiness) in 73046.5945ms
+2026-03-25 15:37:39.025 -03:00 [INF] Executed endpoint 'CRMBusiness.Controllers.BigQueryController.FormsDataSync (CRMBusiness)'
+2026-03-25 15:37:39.030 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/bigquery/formsdatasync?projeto=deboraribeirotricot - 200 null application/json; charset=utf-8 73285.745ms
+2026-03-25 16:00:33.251 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/bigquery/formsdatasync?projeto=deboraribeirotricot - null null
+2026-03-25 16:00:33.321 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.BigQueryController.FormsDataSync (CRMBusiness)'
+2026-03-25 16:00:33.330 -03:00 [INF] Route matched with {action = "FormsDataSync", controller = "BigQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FormsDataSync(System.String) on controller CRMBusiness.Controllers.BigQueryController (CRMBusiness).
+2026-03-25 16:00:41.950 -03:00 [ERR] Erro ao sincronizar forms_data
+The service bigquery has thrown an exception.
+HttpStatusCode is BadRequest.
+Google.Apis.Requests.RequestError
+UPDATE or DELETE statement over table deboraribeirotricot_mkodepnq.forms_data would affect rows in the streaming buffer, which is not supported [400]
+Errors [
+	Message[UPDATE or DELETE statement over table deboraribeirotricot_mkodepnq.forms_data would affect rows in the streaming buffer, which is not supported] Location[q - parameter] Reason[invalidQuery] Domain[global]
+]
+
+Google.GoogleApiException: The service bigquery has thrown an exception. HttpStatusCode is BadRequest. UPDATE or DELETE statement over table deboraribeirotricot_mkodepnq.forms_data would affect rows in the streaming buffer, which is not supported
+   at Google.Apis.Requests.ClientServiceRequest`1.ParseResponse(HttpResponseMessage response)
+   at Google.Apis.Requests.ClientServiceRequest`1.ExecuteAsync(CancellationToken cancellationToken)
+   at Google.Cloud.BigQuery.V2.BigQueryClientImpl.GetQueryResultsAsync(JobReference jobReference, TableReference tableReference, GetQueryResultsOptions options, CancellationToken cancellationToken)
+   at Google.Cloud.BigQuery.V2.BigQueryClient.ExecuteQueryAsync(String sql, IEnumerable`1 parameters, QueryOptions queryOptions, GetQueryResultsOptions resultsOptions, CancellationToken cancellationToken)
+   at CRMBusiness.Services.FormsDataProcessingService.DeleteFormsDataInBatchAsync(String dataset, ProjetoInternoSettings projetoConfig, List`1 opportunityIds) in D:\Projetos\CRMBusiness\Services\FormsDataProcessingService.cs:line 137
+   at CRMBusiness.Services.FormsDataProcessingService.SyncFormsDataAsync(String dataset, ProjetoInternoSettings projetoConfig) in D:\Projetos\CRMBusiness\Services\FormsDataProcessingService.cs:line 42
+2026-03-25 16:00:42.108 -03:00 [INF] Executing ObjectResult, writing value of type 'ProcessingResult'.
+2026-03-25 16:00:42.118 -03:00 [INF] Executed action CRMBusiness.Controllers.BigQueryController.FormsDataSync (CRMBusiness) in 8778.9784ms
+2026-03-25 16:00:42.124 -03:00 [INF] Executed endpoint 'CRMBusiness.Controllers.BigQueryController.FormsDataSync (CRMBusiness)'
+2026-03-25 16:00:42.130 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/bigquery/formsdatasync?projeto=deboraribeirotricot - 500 null application/json; charset=utf-8 8878.9139ms
+2026-03-25 16:00:42.330 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/favicon.ico - null null
+2026-03-25 16:00:42.340 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-25 16:00:42.362 -03:00 [INF] Sending file. Request path: 'favicon.ico'. Physical path: 'D:\Projetos\CRMBusiness\obj\Debug\net9.0\compressed\xemggxdaw6-{0}-61n19gt1b8-61n19gt1b8.gz'
+2026-03-25 16:00:42.368 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-25 16:00:42.372 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/favicon.ico - 200 5463 image/x-icon 41.593ms

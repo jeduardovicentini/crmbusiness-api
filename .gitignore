@@ -1,0 +1,8 @@
+.vs/
+bin/
+obj/
+credentials/
+*.user
+*.suo
+*.cache
+Dockerfile.user

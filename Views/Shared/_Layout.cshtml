@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+    <!-- Meta tags essenciais -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Landing page 'Estamos em Construção' com acesso exclusivo às automações da Tecnobusiness." />
+    <title>Estamos em Construção | Tecnobusiness</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Fundo/estrutura principal -->
+    <div class="page">
+        <!-- Cabeçalho -->
+        <header class="header" role="banner">
+            <div class="container header__inner">
+                <a class="brand" href="#" aria-label="Tecnobusiness">
+                    <span class="brand__dot" aria-hidden="true"></span>
+                    <span class="brand__name">Tecnobusiness</span>
+                </a>
+
+                <span class="status-badge" aria-label="Status do site">Em breve</span>
+            </div>
+        </header>
+
+        <!-- Conteúdo principal -->
+        <main class="main" role="main">
+
+            @RenderBody()
+   
+        </main>
+
+        <!-- Rodapé -->
+        <footer class="footer" role="contentinfo">
+            <div class="container footer__inner">
+                <small>© <span id="year">2026</span> Tecnobusiness. Todos os direitos reservados.</small>
+
+                <!-- Comentário: você pode trocar por links reais (Política, Termos, etc.) -->
+                <nav class="footer__nav" aria-label="Links do rodapé">
+                    <a class="link" href="#">Privacidade</a>
+                    <a class="link" href="#">Termos</a>
+                    <a class="link" href="mailto:contato@tecnobusiness.com.br">Contato</a>
+                </nav>
+            </div>
+
+            <!-- JS opcional bem simples para ano automático (pode remover se quiser 0 JS) -->
+            <script>
+                (function () {
+                  var el = document.getElementById("year");
+                  if (el) el.textContent = String(new Date().getFullYear());
+                })();
+            </script>
+            @await RenderSectionAsync("Scripts", required: false)
+        </footer>
+    </div>
+</body>
+</html>
+
+
+

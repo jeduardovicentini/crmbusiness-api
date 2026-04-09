@@ -1,0 +1,88 @@
+﻿<div class="container main__grid">
+    <!-- Bloco principal: mensagem de construção -->
+    <section class="hero" aria-labelledby="titulo-construcao">
+        <img src="@Url.Content("~/img/logo-tecnobusiness.png")" class="logo" />
+
+        <h1 id="titulo-construcao" class="hero__title">Estamos em Construção</h1>
+
+        <p class="hero__subtitle">
+            Estamos preparando uma nova experiência. Em breve, novidades.
+        </p>
+
+        <div class="hero__meta" aria-label="Informações adicionais">
+            <div class="meta-card">
+                <span class="meta-card__label">Status</span>
+                <span class="meta-card__value">Desenvolvimento em andamento</span>
+            </div>
+            <div class="meta-card">
+                <span class="meta-card__label">Contato</span>
+                <a class="meta-card__value link" href="mailto:contato@tecnobusiness.com.br">
+                    contato@tecnobusiness.com.br
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Área exclusiva: Automações -->
+    <aside class="automations" aria-labelledby="titulo-automacoes">
+        <div class="automations__header">
+            <!-- Ícone simples inline (SVG) -->
+            <span class="automations__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2L20 6V12C20 17 16.5 21.5 12 22C7.5 21.5 4 17 4 12V6L12 2Z" stroke="currentColor" stroke-width="1.8" />
+                    <path d="M9.2 12.2L11 14L15.5 9.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </span>
+
+            <div>
+                <h2 id="titulo-automacoes" class="automations__title">Acesso às Automações Tecnobusiness</h2>
+                <p class="automations__text">
+                    Use suas credenciais para acessar as automações internas.
+                </p>
+            </div>
+        </div>
+
+        <!-- Opção A: UI de login (placeholder) - NÃO autentica sozinho -->
+        <form class="login" action="#" method="post" aria-label="Formulário de acesso (placeholder)">
+            <!-- Comentário: troque o action para o endpoint real quando existir -->
+            <!-- Ex.: action="https://sua-plataforma.com/login" -->
+
+            <div class="field">
+                <label class="field__label" for="email">E-mail</label>
+                <input class="field__input"
+                       type="email"
+                       id="email"
+                       name="email"
+                       placeholder="seuemail@tecnobusiness.com.br"
+                       autocomplete="username"
+                       required />
+            </div>
+
+            <div class="field">
+                <label class="field__label" for="senha">Senha</label>
+                <input class="field__input"
+                       type="password"
+                       id="senha"
+                       name="senha"
+                       placeholder="••••••••"
+                       autocomplete="current-password"
+                       required />
+            </div>
+
+            <button class="button button--primary" type="submit">
+                Entrar
+            </button>
+
+            <!-- Opção B (alternativa): link direto para a plataforma -->
+            <p class="automations__hint">
+                Ou acesse diretamente:
+                <!-- Comentário: substitua o href pela URL real da sua plataforma -->
+                <a class="link" href="#" target="_blank" rel="noopener noreferrer">Acessar Plataforma</a>
+            </p>
+
+            <p class="automations__note">
+                <strong>Nota:</strong> este é um template visual. A autenticação deve ser conectada ao seu back-end/SSO.
+            </p>
+        </form>
+    </aside>
+</div>

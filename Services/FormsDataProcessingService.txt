@@ -1,0 +1,277 @@
+﻿using System.Diagnostics;
+using System.Text.Json;
+using CRMBusiness.Models;
+using CRMBusiness.Services.Interfaces;
+using Google.Cloud.BigQuery.V2;
+
+namespace CRMBusiness.Services;
+
+public sealed class FormsDataProcessingService : IFormsDataProcessingService
+{
+    private readonly ILogger<FormsDataProcessingService> _logger;
+    private readonly BigQueryClient _bigQueryClient;
+
+    public FormsDataProcessingService(
+        ILogger<FormsDataProcessingService> logger,
+        BigQueryClient bigQueryClient)
+    {
+        _logger = logger;
+        _bigQueryClient = bigQueryClient;
+    }
+
+    public async Task<ProcessingResult> SyncFormsDataAsync(
+        string dataset,
+        ProjetoInternoSettings projetoConfig)
+    {
+        var stopwatch = Stopwatch.StartNew();
+        var result = new ProcessingResult();
+
+        try
+        {
+            var opportunities = await GetAllOpportunitiesWithFormsDataAsync(
+                dataset,
+                projetoConfig);
+
+            var forms = await GetAllFormsAsync(
+                dataset,
+                projetoConfig);
+
+            if (opportunities.Count == 0)
+            {
+                result.Success = true;
+                result.Message = "Nenhuma opportunity com formsdata para processar.";
+                result.ExecutionTime = stopwatch.Elapsed;
+                return result;
+            }
+
+            var fieldIdMapping = BuildFieldIdCache(forms);
+
+            var (recordsToInsert, opportunityIdsToDelete) =
+                ProcessOpportunitiesInMemory(opportunities, fieldIdMapping);
+
+            if (opportunityIdsToDelete.Count > 0)
+            {
+                result.RecordsDeleted = await DeleteFormsDataInBatchAsync(
+                    dataset,
+                    projetoConfig,
+                    opportunityIdsToDelete);
+            }
+
+            if (recordsToInsert.Count > 0)
+            {
+                result.RecordsInserted = await InsertFormsDataInBatchAsync(
+                    dataset,
+                    projetoConfig,
+                    recordsToInsert);
+            }
+
+            result.Success = true;
+            result.OpportunitiesProcessed = opportunities.Count;
+            result.Message = "Sincronização concluída com sucesso.";
+        }
+        catch (Exception ex)
+        {
+            result.Success = false;
+            result.Errors.Add(ex.Message);
+            _logger.LogError(ex, "Erro ao sincronizar forms_data");
+        }
+
+        stopwatch.Stop();
+        result.ExecutionTime = stopwatch.Elapsed;
+        return result;
+    }
+
+    public async Task<List<Opportunity>> GetAllOpportunitiesWithFormsDataAsync(
+        string dataset,
+        ProjetoInternoSettings projetoConfig)
+    {
+        var query = $@"
+            SELECT id, formsdata
+            FROM `{dataset}.opportunities`
+            WHERE formsdata IS NOT NULL
+              AND ARRAY_LENGTH(JSON_KEYS(formsdata)) > 0
+        ";
+
+        var opportunities = new List<Opportunity>();
+
+        var rows = await _bigQueryClient.ExecuteQueryAsync(query, parameters: null);
+
+        foreach (var row in rows)
+        {
+            var opportunity = new Opportunity
+            {
+                Id = Convert.ToInt32(row["id"])
+            };
+
+            var formsDataRaw = row["formsdata"]?.ToString();
+
+            if (!string.IsNullOrWhiteSpace(formsDataRaw))
+            {
+                try
+                {
+                    opportunity.FormsData =
+                        JsonSerializer.Deserialize<Dictionary<string, JsonElement>>(formsDataRaw)
+                        ?? new Dictionary<string, JsonElement>();
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogWarning(
+                        ex,
+                        "Erro ao desserializar formsdata da opportunity {OpportunityId}",
+                        opportunity.Id);
+
+                    opportunity.FormsData = new Dictionary<string, JsonElement>();
+                }
+            }
+
+            opportunities.Add(opportunity);
+        }
+
+        return opportunities;
+    }
+
+    public async Task<List<Form>> GetAllFormsAsync(
+        string dataset,
+        ProjetoInternoSettings projetoConfig)
+    {
+        var query = $@"
+            SELECT id, field_id
+            FROM `{dataset}.forms`
+            WHERE field_id IS NOT NULL
+        ";
+
+        var forms = new List<Form>();
+
+        var rows = await _bigQueryClient.ExecuteQueryAsync(query, parameters: null);
+
+        foreach (var row in rows)
+        {
+            forms.Add(new Form
+            {
+                Id = Convert.ToInt32(row["id"]),
+                FieldId = row["field_id"]?.ToString()
+            });
+        }
+
+        return forms;
+    }
+
+    public Dictionary<string, int> BuildFieldIdCache(List<Form> forms)
+    {
+        var mapping = new Dictionary<string, int>();
+
+        foreach (var form in forms)
+        {
+            if (string.IsNullOrWhiteSpace(form.FieldId))
+                continue;
+
+            if (!mapping.ContainsKey(form.FieldId))
+            {
+                mapping.Add(form.FieldId, form.Id);
+            }
+        }
+
+        return mapping;
+    }
+
+    public (List<FormsDataRecord> RecordsToInsert, List<int> OpportunityIdsToDelete)
+        ProcessOpportunitiesInMemory(
+            List<Opportunity> opportunities,
+            Dictionary<string, int> fieldIdMapping)
+    {
+        var recordsToInsert = new List<FormsDataRecord>();
+        var opportunityIdsToDelete = new List<int>();
+
+        foreach (var opportunity in opportunities)
+        {
+            if (opportunity.FormsData == null || opportunity.FormsData.Count == 0)
+                continue;
+
+            opportunityIdsToDelete.Add(opportunity.Id);
+
+            foreach (var item in opportunity.FormsData)
+            {
+                var jsonFieldId = item.Key;
+                var jsonValue = item.Value;
+
+                if (jsonValue.ValueKind == JsonValueKind.Null)
+                    continue;
+
+                var value = ExtractJsonValue(jsonValue);
+
+                if (string.IsNullOrWhiteSpace(value))
+                    continue;
+
+                if (!fieldIdMapping.TryGetValue(jsonFieldId, out var formsId))
+                    continue;
+
+                recordsToInsert.Add(new FormsDataRecord
+                {
+                    OpportunityId = opportunity.Id,
+                    FormsId = formsId,
+                    FormFieldValue = value
+                });
+            }
+        }
+
+        return (recordsToInsert, opportunityIdsToDelete.Distinct().ToList());
+    }
+
+    public async Task<int> DeleteFormsDataInBatchAsync(
+        string dataset,
+        ProjetoInternoSettings projetoConfig,
+        List<int> opportunityIds)
+    {
+        if (opportunityIds.Count == 0)
+            return 0;
+
+        var ids = string.Join(",", opportunityIds.Distinct());
+
+        var query = $@"
+            DELETE FROM `{dataset}.forms_data`
+            WHERE opportunity_id IN ({ids})
+        ";
+
+        await _bigQueryClient.ExecuteQueryAsync(query, parameters: null);
+
+        return opportunityIds.Count;
+    }
+
+    public async Task<int> InsertFormsDataInBatchAsync(
+        string dataset,
+        ProjetoInternoSettings projetoConfig,
+        List<FormsDataRecord> records)
+    {
+        if (records.Count == 0)
+            return 0;
+
+        var table = _bigQueryClient.GetTable(
+            dataset,
+            "forms_data");
+
+        var rows = records.Select(r => new BigQueryInsertRow
+        {
+            { "opportunity_id", r.OpportunityId },
+            { "forms_id", r.FormsId },
+            { "form_field_value", r.FormFieldValue }
+        }).ToList();
+
+        await table.InsertRowsAsync(rows);
+
+        return records.Count;
+    }
+
+    private static string? ExtractJsonValue(JsonElement jsonElement)
+    {
+        return jsonElement.ValueKind switch
+        {
+            JsonValueKind.String => jsonElement.GetString(),
+            JsonValueKind.Number => jsonElement.GetRawText(),
+            JsonValueKind.True => "true",
+            JsonValueKind.False => "false",
+            JsonValueKind.Array => jsonElement.GetRawText(),
+            JsonValueKind.Object => jsonElement.GetRawText(),
+            _ => null
+        };
+    }
+}

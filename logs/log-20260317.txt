@@ -1,0 +1,505 @@
+2026-03-17 21:30:56.124 -03:00 [INF] User profile is available. Using 'C:\Users\EDUARDO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-17 21:30:57.839 -03:00 [INF] Now listening on: https://localhost:7032
+2026-03-17 21:30:57.896 -03:00 [INF] Now listening on: http://localhost:5177
+2026-03-17 21:30:58.233 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-17 21:30:58.238 -03:00 [INF] Hosting environment: Development
+2026-03-17 21:30:58.243 -03:00 [INF] Content root path: D:\Projetos\CRMBusiness
+2026-03-17 21:30:58.564 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/ - null null
+2026-03-17 21:30:59.186 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 21:30:59.326 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CRMBusiness.Controllers.HomeController (CRMBusiness).
+2026-03-17 21:30:59.364 -03:00 [INF] Executing ViewResult, running view Index.
+2026-03-17 21:30:59.559 -03:00 [INF] Executed ViewResult - view Index executed in 196.5499ms.
+2026-03-17 21:30:59.594 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/css/site.css - null null
+2026-03-17 21:30:59.611 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - null null
+2026-03-17 21:30:59.599 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-17 21:30:59.600 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - null null
+2026-03-17 21:30:59.665 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:30:59.648 -03:00 [INF] Executed action CRMBusiness.Controllers.HomeController.Index (CRMBusiness) in 312.6183ms
+2026-03-17 21:30:59.800 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 197.97ms
+2026-03-17 21:30:59.805 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:30:59.811 -03:00 [INF] Executed endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 21:30:59.851 -03:00 [INF] The file img/Logo-TecnoBusiness.png was not modified
+2026-03-17 21:30:59.860 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:30:59.866 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/ - 200 null text/html; charset=utf-8 1309.1194ms
+2026-03-17 21:30:59.867 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - 304 null image/png 266.8943ms
+2026-03-17 21:30:59.904 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 null text/javascript; charset=UTF-8 292.9638ms
+2026-03-17 21:30:59.923 -03:00 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\Projetos\CRMBusiness\obj\Debug\net9.0\compressed\rretn5puo2-{0}-oiums2c10j-oiums2c10j.gz'
+2026-03-17 21:30:59.930 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:30:59.935 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/css/site.css - 200 8647 text/css 341.3034ms
+2026-03-17 21:36:23.020 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/bigquery/OpportunitySync - null null
+2026-03-17 21:36:23.064 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness)'
+2026-03-17 21:36:23.104 -03:00 [INF] Route matched with {action = "OpportunitySync", controller = "BigQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] OpportunitySync(System.String) on controller CRMBusiness.Controllers.BigQueryController (CRMBusiness).
+2026-03-17 21:36:23.707 -03:00 [INF] Registrando BigQueryClient com ProjectId: dutiprojects
+2026-03-17 21:49:24.086 -03:00 [INF] User profile is available. Using 'C:\Users\EDUARDO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-17 21:49:24.357 -03:00 [INF] Now listening on: https://localhost:7032
+2026-03-17 21:49:24.359 -03:00 [INF] Now listening on: http://localhost:5177
+2026-03-17 21:49:24.403 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-17 21:49:24.407 -03:00 [INF] Hosting environment: Development
+2026-03-17 21:49:24.408 -03:00 [INF] Content root path: D:\Projetos\CRMBusiness
+2026-03-17 21:49:25.435 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/ - null null
+2026-03-17 21:49:25.824 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 21:49:25.913 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CRMBusiness.Controllers.HomeController (CRMBusiness).
+2026-03-17 21:49:25.946 -03:00 [INF] Executing ViewResult, running view Index.
+2026-03-17 21:49:26.111 -03:00 [INF] Executed ViewResult - view Index executed in 164.1384ms.
+2026-03-17 21:49:26.128 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-17 21:49:26.128 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/css/site.css - null null
+2026-03-17 21:49:26.163 -03:00 [INF] Executed action CRMBusiness.Controllers.HomeController.Index (CRMBusiness) in 239.5398ms
+2026-03-17 21:49:26.142 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - null null
+2026-03-17 21:49:26.236 -03:00 [INF] Executed endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 21:49:26.237 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - null null
+2026-03-17 21:49:26.260 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:49:26.254 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:49:26.234 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 68.5209ms
+2026-03-17 21:49:26.307 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/ - 200 null text/html; charset=utf-8 877.0333ms
+2026-03-17 21:49:26.331 -03:00 [INF] The file img/Logo-TecnoBusiness.png was not modified
+2026-03-17 21:49:26.359 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:49:26.362 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - 304 null image/png 219.225ms
+2026-03-17 21:49:26.376 -03:00 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\Projetos\CRMBusiness\obj\Debug\net9.0\compressed\rretn5puo2-{0}-oiums2c10j-oiums2c10j.gz'
+2026-03-17 21:49:26.380 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:49:26.382 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/css/site.css - 200 8647 text/css 255.715ms
+2026-03-17 21:49:26.384 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 null text/javascript; charset=UTF-8 146.8535ms
+2026-03-17 21:51:52.022 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/bigquery/OpportunitySync - null null
+2026-03-17 21:51:52.088 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness)'
+2026-03-17 21:51:52.118 -03:00 [INF] Route matched with {action = "OpportunitySync", controller = "BigQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] OpportunitySync(System.String) on controller CRMBusiness.Controllers.BigQueryController (CRMBusiness).
+2026-03-17 21:51:52.161 -03:00 [INF] Registrando BigQueryClient com ProjectId: dutiprojects
+2026-03-17 21:53:20.011 -03:00 [INF] User profile is available. Using 'C:\Users\EDUARDO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-17 21:53:20.261 -03:00 [INF] Now listening on: https://localhost:7032
+2026-03-17 21:53:20.264 -03:00 [INF] Now listening on: http://localhost:5177
+2026-03-17 21:53:20.311 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-17 21:53:20.314 -03:00 [INF] Hosting environment: Development
+2026-03-17 21:53:20.316 -03:00 [INF] Content root path: D:\Projetos\CRMBusiness
+2026-03-17 21:53:20.951 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/ - null null
+2026-03-17 21:53:21.113 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 21:53:21.144 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CRMBusiness.Controllers.HomeController (CRMBusiness).
+2026-03-17 21:53:21.159 -03:00 [INF] Executing ViewResult, running view Index.
+2026-03-17 21:53:21.224 -03:00 [INF] Executed ViewResult - view Index executed in 65.0677ms.
+2026-03-17 21:53:21.236 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/css/site.css - null null
+2026-03-17 21:53:21.238 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-17 21:53:21.306 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - null null
+2026-03-17 21:53:21.358 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:53:21.238 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - null null
+2026-03-17 21:53:21.348 -03:00 [INF] Executed action CRMBusiness.Controllers.HomeController.Index (CRMBusiness) in 196.5568ms
+2026-03-17 21:53:21.397 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 157.0863ms
+2026-03-17 21:53:21.434 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:53:21.434 -03:00 [INF] Executed endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 21:53:21.458 -03:00 [INF] The file img/Logo-TecnoBusiness.png was not modified
+2026-03-17 21:53:21.466 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:53:21.474 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/ - 200 null text/html; charset=utf-8 524.8744ms
+2026-03-17 21:53:21.477 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - 304 null image/png 238.8731ms
+2026-03-17 21:53:21.486 -03:00 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\Projetos\CRMBusiness\obj\Debug\net9.0\compressed\rretn5puo2-{0}-oiums2c10j-oiums2c10j.gz'
+2026-03-17 21:53:21.504 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 null text/javascript; charset=UTF-8 197.7253ms
+2026-03-17 21:53:21.513 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:53:21.520 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/css/site.css - 200 8647 text/css 283.8555ms
+2026-03-17 21:53:25.320 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/bigquery/OpportunitySync - null null
+2026-03-17 21:53:25.353 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness)'
+2026-03-17 21:53:25.416 -03:00 [INF] Route matched with {action = "OpportunitySync", controller = "BigQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] OpportunitySync(System.String) on controller CRMBusiness.Controllers.BigQueryController (CRMBusiness).
+2026-03-17 21:54:37.153 -03:00 [INF] User profile is available. Using 'C:\Users\EDUARDO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-17 21:54:37.449 -03:00 [INF] Now listening on: https://localhost:7032
+2026-03-17 21:54:37.457 -03:00 [INF] Now listening on: http://localhost:5177
+2026-03-17 21:54:37.505 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-17 21:54:37.509 -03:00 [INF] Hosting environment: Development
+2026-03-17 21:54:37.510 -03:00 [INF] Content root path: D:\Projetos\CRMBusiness
+2026-03-17 21:54:38.315 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/ - null null
+2026-03-17 21:54:38.584 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 21:54:38.624 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CRMBusiness.Controllers.HomeController (CRMBusiness).
+2026-03-17 21:54:38.646 -03:00 [INF] Executing ViewResult, running view Index.
+2026-03-17 21:54:38.735 -03:00 [INF] Executed ViewResult - view Index executed in 91.7815ms.
+2026-03-17 21:54:38.822 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - null null
+2026-03-17 21:54:38.752 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-17 21:54:38.877 -03:00 [INF] Executed action CRMBusiness.Controllers.HomeController.Index (CRMBusiness) in 243.8821ms
+2026-03-17 21:54:38.752 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/css/site.css - null null
+2026-03-17 21:54:38.931 -03:00 [INF] Executed endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 21:54:38.893 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:54:38.868 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - null null
+2026-03-17 21:54:38.984 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 230.6908ms
+2026-03-17 21:54:39.012 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/ - 200 null text/html; charset=utf-8 700.8613ms
+2026-03-17 21:54:39.019 -03:00 [INF] The file img/Logo-TecnoBusiness.png was not modified
+2026-03-17 21:54:39.004 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:54:39.072 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:54:39.125 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - 304 null image/png 332.5175ms
+2026-03-17 21:54:39.143 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 null text/javascript; charset=UTF-8 274.771ms
+2026-03-17 21:54:39.173 -03:00 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\Projetos\CRMBusiness\obj\Debug\net9.0\compressed\rretn5puo2-{0}-oiums2c10j-oiums2c10j.gz'
+2026-03-17 21:54:39.177 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:54:39.181 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/css/site.css - 200 8647 text/css 429.5069ms
+2026-03-17 21:54:41.349 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/bigquery/OpportunitySync - null null
+2026-03-17 21:54:41.366 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness)'
+2026-03-17 21:54:41.396 -03:00 [INF] Route matched with {action = "OpportunitySync", controller = "BigQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] OpportunitySync(System.String) on controller CRMBusiness.Controllers.BigQueryController (CRMBusiness).
+2026-03-17 21:56:51.840 -03:00 [INF] User profile is available. Using 'C:\Users\EDUARDO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-17 21:56:52.165 -03:00 [INF] Now listening on: https://localhost:7032
+2026-03-17 21:56:52.172 -03:00 [INF] Now listening on: http://localhost:5177
+2026-03-17 21:56:52.268 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-17 21:56:52.270 -03:00 [INF] Hosting environment: Development
+2026-03-17 21:56:52.272 -03:00 [INF] Content root path: D:\Projetos\CRMBusiness
+2026-03-17 21:56:52.676 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/ - null null
+2026-03-17 21:56:52.907 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 21:56:52.968 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CRMBusiness.Controllers.HomeController (CRMBusiness).
+2026-03-17 21:56:52.987 -03:00 [INF] Executing ViewResult, running view Index.
+2026-03-17 21:56:53.119 -03:00 [INF] Executed ViewResult - view Index executed in 129.7782ms.
+2026-03-17 21:56:53.143 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - null null
+2026-03-17 21:56:53.140 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-17 21:56:53.186 -03:00 [INF] Executed action CRMBusiness.Controllers.HomeController.Index (CRMBusiness) in 211.1278ms
+2026-03-17 21:56:53.228 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:56:53.293 -03:00 [INF] Executed endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 21:56:53.135 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/css/site.css - null null
+2026-03-17 21:56:53.159 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - null null
+2026-03-17 21:56:53.314 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 171.9945ms
+2026-03-17 21:56:53.330 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/ - 200 null text/html; charset=utf-8 658.2606ms
+2026-03-17 21:56:53.326 -03:00 [INF] The file img/Logo-TecnoBusiness.png was not modified
+2026-03-17 21:56:53.349 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:56:53.385 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:56:53.391 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - 304 null image/png 247.4711ms
+2026-03-17 21:56:53.447 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 null text/javascript; charset=UTF-8 288.2667ms
+2026-03-17 21:56:53.450 -03:00 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\Projetos\CRMBusiness\obj\Debug\net9.0\compressed\rretn5puo2-{0}-oiums2c10j-oiums2c10j.gz'
+2026-03-17 21:56:53.469 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:56:53.473 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/css/site.css - 200 8647 text/css 337.8668ms
+2026-03-17 21:56:55.568 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/bigquery/OpportunitySync - null null
+2026-03-17 21:56:55.591 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness)'
+2026-03-17 21:56:55.642 -03:00 [INF] Route matched with {action = "OpportunitySync", controller = "BigQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] OpportunitySync(System.String) on controller CRMBusiness.Controllers.BigQueryController (CRMBusiness).
+2026-03-17 21:56:55.702 -03:00 [INF] Registrando BigQueryClient com ProjectId: dutiprojects
+2026-03-17 21:56:55.715 -03:00 [INF] Usando credenciais padrão (arquivo/variável)
+2026-03-17 21:58:51.977 -03:00 [INF] User profile is available. Using 'C:\Users\EDUARDO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-17 21:58:54.885 -03:00 [INF] Now listening on: https://localhost:7032
+2026-03-17 21:58:54.894 -03:00 [INF] Now listening on: http://localhost:5177
+2026-03-17 21:58:55.149 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-17 21:58:55.160 -03:00 [INF] Hosting environment: Development
+2026-03-17 21:58:55.166 -03:00 [INF] Content root path: D:\Projetos\CRMBusiness
+2026-03-17 21:58:55.326 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/bigquery/OpportunitySync - null null
+2026-03-17 21:58:55.553 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/ - null null
+2026-03-17 21:58:55.972 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 21:58:55.972 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness)'
+2026-03-17 21:58:56.083 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CRMBusiness.Controllers.HomeController (CRMBusiness).
+2026-03-17 21:58:56.084 -03:00 [INF] Route matched with {action = "OpportunitySync", controller = "BigQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] OpportunitySync(System.String) on controller CRMBusiness.Controllers.BigQueryController (CRMBusiness).
+2026-03-17 21:58:56.186 -03:00 [INF] Registrando BigQueryClient com ProjectId: dutiprojects
+2026-03-17 21:58:56.199 -03:00 [INF] Usando credenciais padrão (arquivo/variável)
+2026-03-17 21:58:56.204 -03:00 [INF] Executing ViewResult, running view Index.
+2026-03-17 21:58:56.564 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/css/site.css - null null
+2026-03-17 21:58:56.617 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - null null
+2026-03-17 21:58:56.575 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-17 21:58:56.710 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - null null
+2026-03-17 21:58:56.711 -03:00 [INF] Executed ViewResult - view Index executed in 384.5344ms.
+2026-03-17 21:58:56.733 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:58:56.735 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:58:56.776 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 198.4702ms
+2026-03-17 21:58:56.852 -03:00 [INF] The file img/Logo-TecnoBusiness.png was not modified
+2026-03-17 21:58:56.847 -03:00 [INF] Executed action CRMBusiness.Controllers.HomeController.Index (CRMBusiness) in 748.8257ms
+2026-03-17 21:58:56.885 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:58:56.896 -03:00 [INF] Executed endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 21:58:56.907 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - 304 null image/png 291.4297ms
+2026-03-17 21:58:56.919 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/ - 200 null text/html; charset=utf-8 1365.1571ms
+2026-03-17 21:58:56.931 -03:00 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\Projetos\CRMBusiness\obj\Debug\net9.0\compressed\rretn5puo2-{0}-oiums2c10j-oiums2c10j.gz'
+2026-03-17 21:58:56.938 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:58:56.941 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/css/site.css - 200 8647 text/css 376.6993ms
+2026-03-17 21:58:56.954 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 null text/javascript; charset=UTF-8 243.2837ms
+2026-03-17 21:58:57.088 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-03-17 21:58:57.213 -03:00 [INF] Executed action CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness) in 1107.0831ms
+2026-03-17 21:58:57.231 -03:00 [INF] Executed endpoint 'CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness)'
+2026-03-17 21:58:57.248 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/bigquery/OpportunitySync - 400 null application/problem+json; charset=utf-8 1927.5347ms
+2026-03-17 21:59:40.938 -03:00 [INF] User profile is available. Using 'C:\Users\EDUARDO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-17 21:59:41.293 -03:00 [INF] Now listening on: https://localhost:7032
+2026-03-17 21:59:41.297 -03:00 [INF] Now listening on: http://localhost:5177
+2026-03-17 21:59:41.386 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-17 21:59:41.388 -03:00 [INF] Hosting environment: Development
+2026-03-17 21:59:41.390 -03:00 [INF] Content root path: D:\Projetos\CRMBusiness
+2026-03-17 21:59:42.013 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/ - null null
+2026-03-17 21:59:42.495 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 21:59:42.560 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CRMBusiness.Controllers.HomeController (CRMBusiness).
+2026-03-17 21:59:42.588 -03:00 [INF] Executing ViewResult, running view Index.
+2026-03-17 21:59:42.671 -03:00 [INF] Executed ViewResult - view Index executed in 87.9297ms.
+2026-03-17 21:59:42.689 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-17 21:59:42.689 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - null null
+2026-03-17 21:59:42.689 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/css/site.css - null null
+2026-03-17 21:59:42.694 -03:00 [INF] Executed action CRMBusiness.Controllers.HomeController.Index (CRMBusiness) in 125.6874ms
+2026-03-17 21:59:42.752 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - null null
+2026-03-17 21:59:42.845 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 114.5015ms
+2026-03-17 21:59:42.864 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:59:42.863 -03:00 [INF] Executed endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 21:59:42.848 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:59:42.927 -03:00 [INF] The file img/Logo-TecnoBusiness.png was not modified
+2026-03-17 21:59:42.930 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/ - 200 null text/html; charset=utf-8 923.6408ms
+2026-03-17 21:59:42.953 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:59:42.991 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - 304 null image/png 301.6014ms
+2026-03-17 21:59:43.023 -03:00 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\Projetos\CRMBusiness\obj\Debug\net9.0\compressed\rretn5puo2-{0}-oiums2c10j-oiums2c10j.gz'
+2026-03-17 21:59:43.036 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 null text/javascript; charset=UTF-8 319.8263ms
+2026-03-17 21:59:43.040 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 21:59:43.052 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/css/site.css - 200 8647 text/css 363.1445ms
+2026-03-17 21:59:46.687 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/bigquery/OpportunitySync - null null
+2026-03-17 21:59:46.720 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness)'
+2026-03-17 21:59:46.784 -03:00 [INF] Route matched with {action = "OpportunitySync", controller = "BigQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] OpportunitySync(System.String) on controller CRMBusiness.Controllers.BigQueryController (CRMBusiness).
+2026-03-17 21:59:59.641 -03:00 [INF] Registrando BigQueryClient com ProjectId: dutiprojects
+2026-03-17 22:00:07.177 -03:00 [INF] Usando credenciais padrão (arquivo/variável)
+2026-03-17 22:00:19.113 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-03-17 22:00:19.182 -03:00 [INF] Executed action CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness) in 32380.731ms
+2026-03-17 22:00:19.188 -03:00 [INF] Executed endpoint 'CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness)'
+2026-03-17 22:00:19.193 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/bigquery/OpportunitySync - 400 null application/problem+json; charset=utf-8 32506.3341ms
+2026-03-17 22:00:19.293 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/favicon.ico - null null
+2026-03-17 22:00:19.303 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:00:19.327 -03:00 [INF] Sending file. Request path: 'favicon.ico'. Physical path: 'D:\Projetos\CRMBusiness\obj\Debug\net9.0\compressed\xemggxdaw6-{0}-61n19gt1b8-61n19gt1b8.gz'
+2026-03-17 22:00:19.332 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:00:19.335 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/favicon.ico - 200 5463 image/x-icon 41.7578ms
+2026-03-17 22:03:10.055 -03:00 [INF] User profile is available. Using 'C:\Users\EDUARDO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-17 22:03:10.323 -03:00 [INF] Now listening on: https://localhost:7032
+2026-03-17 22:03:10.326 -03:00 [INF] Now listening on: http://localhost:5177
+2026-03-17 22:03:10.373 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-17 22:03:10.375 -03:00 [INF] Hosting environment: Development
+2026-03-17 22:03:10.378 -03:00 [INF] Content root path: D:\Projetos\CRMBusiness
+2026-03-17 22:03:10.734 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/ - null null
+2026-03-17 22:03:10.967 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 22:03:11.002 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CRMBusiness.Controllers.HomeController (CRMBusiness).
+2026-03-17 22:03:11.014 -03:00 [INF] Executing ViewResult, running view Index.
+2026-03-17 22:03:11.070 -03:00 [INF] Executed ViewResult - view Index executed in 57.6554ms.
+2026-03-17 22:03:11.085 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/css/site.css - null null
+2026-03-17 22:03:11.162 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - null null
+2026-03-17 22:03:11.213 -03:00 [INF] Executed action CRMBusiness.Controllers.HomeController.Index (CRMBusiness) in 205.8296ms
+2026-03-17 22:03:11.252 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:03:11.246 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:03:11.086 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-17 22:03:11.165 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - null null
+2026-03-17 22:03:11.277 -03:00 [INF] Executed endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 22:03:11.298 -03:00 [INF] The file img/Logo-TecnoBusiness.png was not modified
+2026-03-17 22:03:11.324 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 236.2729ms
+2026-03-17 22:03:11.378 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/ - 200 null text/html; charset=utf-8 646.1715ms
+2026-03-17 22:03:11.337 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:03:11.397 -03:00 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\Projetos\CRMBusiness\obj\Debug\net9.0\compressed\rretn5puo2-{0}-oiums2c10j-oiums2c10j.gz'
+2026-03-17 22:03:11.405 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - 304 null image/png 274.4934ms
+2026-03-17 22:03:11.409 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:03:11.414 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/css/site.css - 200 8647 text/css 329.2875ms
+2026-03-17 22:03:11.424 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 null text/javascript; charset=UTF-8 259.337ms
+2026-03-17 22:03:22.009 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/bigquery/OpportunitySync - null null
+2026-03-17 22:03:22.039 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness)'
+2026-03-17 22:03:22.082 -03:00 [INF] Route matched with {action = "OpportunitySync", controller = "BigQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] OpportunitySync(System.String) on controller CRMBusiness.Controllers.BigQueryController (CRMBusiness).
+2026-03-17 22:03:26.734 -03:00 [INF] Executed action CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness) in 4642.8241ms
+2026-03-17 22:03:26.752 -03:00 [INF] Executed endpoint 'CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness)'
+2026-03-17 22:03:26.777 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: GOOGLE_CREDENTIALS_JSON não configurado.
+   at Program.<>c.<<Main>$>b__0_1(IServiceProvider sp) in D:\Projetos\CRMBusiness\Program.cs:line 59
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method24(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-17 22:03:26.973 -03:00 [ERR] Erro não tratado na aplicação
+System.Exception: GOOGLE_CREDENTIALS_JSON não configurado.
+   at Program.<>c.<<Main>$>b__0_1(IServiceProvider sp) in D:\Projetos\CRMBusiness\Program.cs:line 59
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method24(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-17 22:03:27.026 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/bigquery/OpportunitySync - 500 null null 5016.9598ms
+2026-03-17 22:03:27.221 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/favicon.ico - null null
+2026-03-17 22:03:27.237 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:03:27.249 -03:00 [INF] Sending file. Request path: 'favicon.ico'. Physical path: 'D:\Projetos\CRMBusiness\obj\Debug\net9.0\compressed\xemggxdaw6-{0}-61n19gt1b8-61n19gt1b8.gz'
+2026-03-17 22:03:27.261 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:03:27.270 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/favicon.ico - 200 5463 image/x-icon 49.2321ms
+2026-03-17 22:04:26.812 -03:00 [INF] User profile is available. Using 'C:\Users\EDUARDO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-17 22:04:27.136 -03:00 [INF] Now listening on: https://localhost:7032
+2026-03-17 22:04:27.143 -03:00 [INF] Now listening on: http://localhost:5177
+2026-03-17 22:04:27.202 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-17 22:04:27.207 -03:00 [INF] Hosting environment: Development
+2026-03-17 22:04:27.210 -03:00 [INF] Content root path: D:\Projetos\CRMBusiness
+2026-03-17 22:04:27.782 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/ - null null
+2026-03-17 22:04:28.001 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 22:04:28.035 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CRMBusiness.Controllers.HomeController (CRMBusiness).
+2026-03-17 22:04:28.051 -03:00 [INF] Executing ViewResult, running view Index.
+2026-03-17 22:04:28.119 -03:00 [INF] Executed ViewResult - view Index executed in 67.8401ms.
+2026-03-17 22:04:28.130 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - null null
+2026-03-17 22:04:28.163 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - null null
+2026-03-17 22:04:28.129 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/css/site.css - null null
+2026-03-17 22:04:28.130 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-17 22:04:28.215 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:04:28.212 -03:00 [INF] Executed action CRMBusiness.Controllers.HomeController.Index (CRMBusiness) in 170.1074ms
+2026-03-17 22:04:28.321 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:04:28.351 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 218.1247ms
+2026-03-17 22:04:28.357 -03:00 [INF] The file img/Logo-TecnoBusiness.png was not modified
+2026-03-17 22:04:28.352 -03:00 [INF] Executed endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 22:04:28.381 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:04:28.386 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 null text/javascript; charset=UTF-8 222.5979ms
+2026-03-17 22:04:28.388 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - 304 null image/png 257.2764ms
+2026-03-17 22:04:28.389 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/ - 200 null text/html; charset=utf-8 612.1746ms
+2026-03-17 22:04:28.394 -03:00 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\Projetos\CRMBusiness\obj\Debug\net9.0\compressed\rretn5puo2-{0}-oiums2c10j-oiums2c10j.gz'
+2026-03-17 22:04:28.406 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:04:28.409 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/css/site.css - 200 8647 text/css 279.7786ms
+2026-03-17 22:04:32.223 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/bigquery/OpportunitySync - null null
+2026-03-17 22:04:32.241 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness)'
+2026-03-17 22:04:32.293 -03:00 [INF] Route matched with {action = "OpportunitySync", controller = "BigQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] OpportunitySync(System.String) on controller CRMBusiness.Controllers.BigQueryController (CRMBusiness).
+2026-03-17 22:04:32.330 -03:00 [INF] Registrando BigQueryClient com ProjectId: dutiprojects
+2026-03-17 22:04:32.627 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-03-17 22:04:32.687 -03:00 [INF] Executed action CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness) in 384.2678ms
+2026-03-17 22:04:32.694 -03:00 [INF] Executed endpoint 'CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness)'
+2026-03-17 22:04:32.699 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/bigquery/OpportunitySync - 400 null application/problem+json; charset=utf-8 475.6146ms
+2026-03-17 22:04:32.755 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/favicon.ico - null null
+2026-03-17 22:04:32.765 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:04:32.772 -03:00 [INF] Sending file. Request path: 'favicon.ico'. Physical path: 'D:\Projetos\CRMBusiness\obj\Debug\net9.0\compressed\xemggxdaw6-{0}-61n19gt1b8-61n19gt1b8.gz'
+2026-03-17 22:04:32.776 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:04:32.780 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/favicon.ico - 200 5463 image/x-icon 25.4737ms
+2026-03-17 22:05:42.020 -03:00 [INF] User profile is available. Using 'C:\Users\EDUARDO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-17 22:05:42.355 -03:00 [INF] Now listening on: https://localhost:7032
+2026-03-17 22:05:42.359 -03:00 [INF] Now listening on: http://localhost:5177
+2026-03-17 22:05:42.548 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-17 22:05:42.553 -03:00 [INF] Hosting environment: Development
+2026-03-17 22:05:42.561 -03:00 [INF] Content root path: D:\Projetos\CRMBusiness
+2026-03-17 22:05:43.088 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/ - null null
+2026-03-17 22:05:43.436 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 22:05:43.540 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CRMBusiness.Controllers.HomeController (CRMBusiness).
+2026-03-17 22:05:43.591 -03:00 [INF] Executing ViewResult, running view Index.
+2026-03-17 22:05:43.738 -03:00 [INF] Executed ViewResult - view Index executed in 156.6106ms.
+2026-03-17 22:05:43.753 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/css/site.css - null null
+2026-03-17 22:05:43.757 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-17 22:05:43.757 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - null null
+2026-03-17 22:05:43.828 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:05:43.896 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:05:43.794 -03:00 [INF] Executed action CRMBusiness.Controllers.HomeController.Index (CRMBusiness) in 240.9424ms
+2026-03-17 22:05:43.898 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 138.4192ms
+2026-03-17 22:05:43.973 -03:00 [INF] The file img/Logo-TecnoBusiness.png was not modified
+2026-03-17 22:05:43.973 -03:00 [INF] Executed endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 22:05:43.954 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - null null
+2026-03-17 22:05:44.014 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:05:44.032 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/ - 200 null text/html; charset=utf-8 949.6398ms
+2026-03-17 22:05:44.042 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - 304 null image/png 284.2657ms
+2026-03-17 22:05:44.063 -03:00 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\Projetos\CRMBusiness\obj\Debug\net9.0\compressed\rretn5puo2-{0}-oiums2c10j-oiums2c10j.gz'
+2026-03-17 22:05:44.089 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:05:44.092 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/css/site.css - 200 8647 text/css 338.9826ms
+2026-03-17 22:05:44.120 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 null text/javascript; charset=UTF-8 165.7106ms
+2026-03-17 22:05:44.506 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/bigquery/OpportunitySync - null null
+2026-03-17 22:05:44.535 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness)'
+2026-03-17 22:05:44.587 -03:00 [INF] Route matched with {action = "OpportunitySync", controller = "BigQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] OpportunitySync(System.String) on controller CRMBusiness.Controllers.BigQueryController (CRMBusiness).
+2026-03-17 22:06:10.093 -03:00 [INF] User profile is available. Using 'C:\Users\EDUARDO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-17 22:06:10.437 -03:00 [INF] Now listening on: https://localhost:7032
+2026-03-17 22:06:10.441 -03:00 [INF] Now listening on: http://localhost:5177
+2026-03-17 22:06:10.506 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-17 22:06:10.509 -03:00 [INF] Hosting environment: Development
+2026-03-17 22:06:10.512 -03:00 [INF] Content root path: D:\Projetos\CRMBusiness
+2026-03-17 22:06:10.925 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/ - null null
+2026-03-17 22:06:11.101 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 22:06:11.136 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CRMBusiness.Controllers.HomeController (CRMBusiness).
+2026-03-17 22:06:11.151 -03:00 [INF] Executing ViewResult, running view Index.
+2026-03-17 22:06:11.210 -03:00 [INF] Executed ViewResult - view Index executed in 61.135ms.
+2026-03-17 22:06:11.225 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/css/site.css - null null
+2026-03-17 22:06:11.225 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - null null
+2026-03-17 22:06:11.237 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - null null
+2026-03-17 22:06:11.287 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:06:11.240 -03:00 [INF] Executed action CRMBusiness.Controllers.HomeController.Index (CRMBusiness) in 98.4477ms
+2026-03-17 22:06:11.225 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-17 22:06:11.282 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:06:11.324 -03:00 [INF] Executed endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 22:06:11.326 -03:00 [INF] The file img/Logo-TecnoBusiness.png was not modified
+2026-03-17 22:06:11.343 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 116.7319ms
+2026-03-17 22:06:11.355 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:06:11.362 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/ - 200 null text/html; charset=utf-8 440.8501ms
+2026-03-17 22:06:11.396 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - 304 null image/png 171.2725ms
+2026-03-17 22:06:11.400 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 null text/javascript; charset=UTF-8 162.5482ms
+2026-03-17 22:06:11.411 -03:00 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\Projetos\CRMBusiness\obj\Debug\net9.0\compressed\rretn5puo2-{0}-oiums2c10j-oiums2c10j.gz'
+2026-03-17 22:06:11.427 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:06:11.430 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/css/site.css - 200 8647 text/css 204.6458ms
+2026-03-17 22:06:11.615 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/favicon.ico - null null
+2026-03-17 22:06:11.630 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:06:11.634 -03:00 [INF] Sending file. Request path: 'favicon.ico'. Physical path: 'D:\Projetos\CRMBusiness\obj\Debug\net9.0\compressed\xemggxdaw6-{0}-61n19gt1b8-61n19gt1b8.gz'
+2026-03-17 22:06:11.639 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:06:11.643 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/favicon.ico - 200 5463 image/x-icon 27.6853ms
+2026-03-17 22:06:12.500 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/bigquery/OpportunitySync - null null
+2026-03-17 22:06:12.527 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness)'
+2026-03-17 22:06:12.578 -03:00 [INF] Route matched with {action = "OpportunitySync", controller = "BigQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] OpportunitySync(System.String) on controller CRMBusiness.Controllers.BigQueryController (CRMBusiness).
+2026-03-17 22:06:18.224 -03:00 [INF] Registrando BigQueryClient com ProjectId: dutiprojects
+2026-03-17 22:06:24.396 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-03-17 22:06:24.466 -03:00 [INF] Executed action CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness) in 11876.3446ms
+2026-03-17 22:06:24.472 -03:00 [INF] Executed endpoint 'CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness)'
+2026-03-17 22:06:24.475 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/bigquery/OpportunitySync - 400 null application/problem+json; charset=utf-8 11975.7223ms
+2026-03-17 22:06:24.787 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/favicon.ico - null null
+2026-03-17 22:06:24.797 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:06:24.803 -03:00 [INF] Sending file. Request path: 'favicon.ico'. Physical path: 'D:\Projetos\CRMBusiness\obj\Debug\net9.0\compressed\xemggxdaw6-{0}-61n19gt1b8-61n19gt1b8.gz'
+2026-03-17 22:06:24.808 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:06:24.810 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/favicon.ico - 200 5463 image/x-icon 22.7911ms
+2026-03-17 22:08:43.324 -03:00 [INF] User profile is available. Using 'C:\Users\EDUARDO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-17 22:08:43.586 -03:00 [INF] Now listening on: https://localhost:7032
+2026-03-17 22:08:43.590 -03:00 [INF] Now listening on: http://localhost:5177
+2026-03-17 22:08:43.640 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-17 22:08:43.643 -03:00 [INF] Hosting environment: Development
+2026-03-17 22:08:43.646 -03:00 [INF] Content root path: D:\Projetos\CRMBusiness
+2026-03-17 22:08:44.807 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/ - null null
+2026-03-17 22:08:45.200 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 22:08:45.263 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CRMBusiness.Controllers.HomeController (CRMBusiness).
+2026-03-17 22:08:45.290 -03:00 [INF] Executing ViewResult, running view Index.
+2026-03-17 22:08:45.384 -03:00 [INF] Executed ViewResult - view Index executed in 101.4261ms.
+2026-03-17 22:08:45.402 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - null null
+2026-03-17 22:08:45.400 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/css/site.css - null null
+2026-03-17 22:08:45.427 -03:00 [INF] Executed action CRMBusiness.Controllers.HomeController.Index (CRMBusiness) in 155.506ms
+2026-03-17 22:08:45.470 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:08:45.401 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-17 22:08:45.412 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - null null
+2026-03-17 22:08:45.494 -03:00 [INF] Executed endpoint 'CRMBusiness.Controllers.HomeController.Index (CRMBusiness)'
+2026-03-17 22:08:45.495 -03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:08:45.510 -03:00 [INF] The file img/Logo-TecnoBusiness.png was not modified
+2026-03-17 22:08:45.522 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 119.6693ms
+2026-03-17 22:08:45.566 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:08:45.565 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/ - 200 null text/html; charset=utf-8 761.3001ms
+2026-03-17 22:08:45.596 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/img/logo-tecnobusiness.png?v-1 - 304 null image/png 195.0785ms
+2026-03-17 22:08:45.612 -03:00 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\Projetos\CRMBusiness\obj\Debug\net9.0\compressed\rretn5puo2-{0}-oiums2c10j-oiums2c10j.gz'
+2026-03-17 22:08:45.615 -03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-03-17 22:08:45.618 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/css/site.css - 200 8647 text/css 218.3462ms
+2026-03-17 22:08:45.621 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 null text/javascript; charset=UTF-8 209.1363ms
+2026-03-17 22:08:49.077 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/bigquery/opportunitysync?projeto=deboraribeirotricot - null null
+2026-03-17 22:08:49.120 -03:00 [INF] Executing endpoint 'CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness)'
+2026-03-17 22:08:49.163 -03:00 [INF] Route matched with {action = "OpportunitySync", controller = "BigQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] OpportunitySync(System.String) on controller CRMBusiness.Controllers.BigQueryController (CRMBusiness).
+2026-03-17 22:08:53.422 -03:00 [INF] Registrando BigQueryClient com ProjectId: dutiprojects
+2026-03-17 22:08:53.912 -03:00 [INF] Start processing HTTP request POST https://deboraribeirotricot.atenderbem.com/int/getPipeOpportunities
+2026-03-17 22:08:53.911 -03:00 [INF] Start processing HTTP request POST https://deboraribeirotricot.atenderbem.com/int/getPipeOpportunities
+2026-03-17 22:08:53.912 -03:00 [INF] Start processing HTTP request POST https://deboraribeirotricot.atenderbem.com/int/getPipeOpportunities
+2026-03-17 22:08:53.922 -03:00 [INF] Sending HTTP request POST https://deboraribeirotricot.atenderbem.com/int/getPipeOpportunities
+2026-03-17 22:08:53.925 -03:00 [INF] Sending HTTP request POST https://deboraribeirotricot.atenderbem.com/int/getPipeOpportunities
+2026-03-17 22:08:53.928 -03:00 [INF] Sending HTTP request POST https://deboraribeirotricot.atenderbem.com/int/getPipeOpportunities
+2026-03-17 22:08:57.294 -03:00 [INF] Received HTTP response headers after 3336.488ms - 200
+2026-03-17 22:08:57.294 -03:00 [INF] Received HTTP response headers after 3360.55ms - 200
+2026-03-17 22:08:57.296 -03:00 [INF] Received HTTP response headers after 3349.4255ms - 400
+2026-03-17 22:08:57.304 -03:00 [INF] End processing HTTP request after 3395.0004ms - 200
+2026-03-17 22:08:57.309 -03:00 [INF] End processing HTTP request after 3400.0828ms - 200
+2026-03-17 22:08:57.314 -03:00 [INF] End processing HTTP request after 3404.9331ms - 400
+2026-03-17 22:09:01.527 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-03-17 22:09:01.535 -03:00 [INF] Executed action CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness) in 12361.0762ms
+2026-03-17 22:09:01.540 -03:00 [INF] Executed endpoint 'CRMBusiness.Controllers.BigQueryController.OpportunitySync (CRMBusiness)'
+2026-03-17 22:09:01.544 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/bigquery/opportunitysync?projeto=deboraribeirotricot - 200 null text/plain; charset=utf-8 12466.9826ms
