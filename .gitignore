@@ -6,3 +6,4 @@ credentials/
 *.suo
 *.cache
 Dockerfile.user
+Properties/launchSettings.json
