@@ -150,6 +150,16 @@ using (var scope = app.Services.CreateScope())
 
     // Registrar um job recorrente no Hangfire
     RecurringJob.AddOrUpdate(
+        "SincronizarOportunidadesStatusDiario_crmbusiness",
+        () => bigQueryService.SincronizarStatusAsync(
+            "crmbusiness_msxon5vn",
+            bigQueryService.ObterProjetoInternoSettings("crmbusiness")
+        ),
+        Cron.Daily() // Agendado para executar diariamente às 0h
+    );
+
+        // Registrar um job recorrente no Hangfire
+    RecurringJob.AddOrUpdate(
         "SincronizarOportunidadesStatusDiario_deboraribeirotricot",
         () => bigQueryService.SincronizarStatusAsync(
             "deboraribeirotricot_mnbicvun",
@@ -160,6 +170,16 @@ using (var scope = app.Services.CreateScope())
 
     var formsDataService = scope.ServiceProvider.GetRequiredService<FormsDataProcessingService>();
 
+    RecurringJob.AddOrUpdate(
+        "SincronizarFormsDiaro_crmbusiness",
+        () => formsDataService.SyncFormsDataAsync(
+            "crmbusiness_msxon5vn",
+            formsDataService.ObterProjetoInternoSettings("crmbusiness")
+        ),
+        Cron.Daily(23) // Executa diariamente às 23h 
+    );
+
+    
     RecurringJob.AddOrUpdate(
         "SincronizarFormsDiaro_deboraribeirotricot",
         () => formsDataService.SyncFormsDataAsync(
